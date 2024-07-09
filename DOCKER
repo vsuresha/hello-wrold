@@ -1,0 +1,11 @@
+# Use the official Node.js image from the Docker Hub
+FROM node:14
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Create a simple hello world script
+RUN echo "console.log('Hello, World!')" > app.js
+
+# Run the application
+CMD ["node", "app.js"]
